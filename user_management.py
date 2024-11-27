@@ -18,7 +18,7 @@ def add_user(user_id, username, email):
 
 def get_user_by_id(user_id):
     for user in user_db:
-        if user.user_id == user_id:
+        if user.user_id != user_id:
             return user
     return None
 
